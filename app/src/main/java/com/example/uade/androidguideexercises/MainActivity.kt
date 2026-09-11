@@ -27,6 +27,8 @@ import com.example.uade.androidguideexercises.exercises.ex01.Exercise01
 import com.example.uade.androidguideexercises.exercises.ex02.Exercise02
 import com.example.uade.androidguideexercises.exercises.ex03.Exercise03
 import com.example.uade.androidguideexercises.exercises.ex04.Exercise04
+import com.example.uade.androidguideexercises.exercises.ex05.Exercise05
+import com.example.uade.androidguideexercises.exercises.ex06.Exercise06
 import com.example.uade.androidguideexercises.ui.theme.AndroidGuideExercisesTheme
 
 class MainActivity : ComponentActivity() {
@@ -89,6 +91,22 @@ fun GuiaDeEjercicios(modifier: Modifier = Modifier) {
         ) {
             Exercise04()
         }
+
+        5 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 5 - Column, Row, Modifier y Material 3",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise05()
+        }
+
+        6 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 6 -  Estado, botones y recomposición: contador",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise06()
+        }
     }
 }
 
@@ -122,6 +140,27 @@ fun MenuDeEjercicios(onSeleccionar: (Int) -> Unit, modifier: Modifier = Modifier
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("3 - val, var y tipos")
+        }
+
+        Button(
+            onClick = { onSeleccionar(4) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("4 - Funciones, parámetros y componentes reutilizables")
+        }
+
+        Button(
+            onClick = { onSeleccionar(5) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("5 - Column, Row, Modifier y Material 3")
+        }
+
+        Button(
+            onClick = { onSeleccionar(6) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("6 - Estado, botones y recomposición: contador")
         }
     }
 }
