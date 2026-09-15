@@ -29,6 +29,11 @@ import com.example.uade.androidguideexercises.exercises.ex03.Exercise03
 import com.example.uade.androidguideexercises.exercises.ex04.Exercise04
 import com.example.uade.androidguideexercises.exercises.ex05.Exercise05
 import com.example.uade.androidguideexercises.exercises.ex06.Exercise06
+import com.example.uade.androidguideexercises.exercises.ex07.Exercise07
+import com.example.uade.androidguideexercises.exercises.ex08.Exercise08
+import com.example.uade.androidguideexercises.exercises.ex09.Exercise09
+import com.example.uade.androidguideexercises.exercises.ex10.Exercise10
+import com.example.uade.androidguideexercises.exercises.ex11.Exercise11
 import com.example.uade.androidguideexercises.ui.theme.AndroidGuideExercisesTheme
 
 class MainActivity : ComponentActivity() {
@@ -107,6 +112,46 @@ fun GuiaDeEjercicios(modifier: Modifier = Modifier) {
         ) {
             Exercise06()
         }
+
+        7 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 7 -  TextField, if/when y null safety",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise07()
+        }
+
+        8 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 8 — Calculadora pequeña, Logcat y debugger",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise08()
+        }
+
+        9 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 9 — Data class, List y LazyColumn",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise09()
+        }
+
+        10 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 10 — Lista editable: tareas del estudiante",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise10()
+        }
+
+        11 -> PantallaDeEjercicio(
+            titulo = "Ejercicio 11 — Recursos Android y configuración visual",
+            modifier = modifier,
+            onVolver = { ejercicioAbierto = null }
+        ) {
+            Exercise11()
+        }
     }
 }
 
@@ -161,6 +206,41 @@ fun MenuDeEjercicios(onSeleccionar: (Int) -> Unit, modifier: Modifier = Modifier
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("6 - Estado, botones y recomposición: contador")
+        }
+
+        Button(
+            onClick = { onSeleccionar(7) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("7 — TextField, if/when y null safety")
+        }
+
+        Button(
+            onClick = { onSeleccionar(8) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("8 — Calculadora pequeña, Logcat y debugger")
+        }
+
+        Button(
+            onClick = { onSeleccionar(9) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("9 — Data class, List y LazyColumn")
+        }
+
+        Button(
+            onClick = { onSeleccionar(10) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("10 — Lista editable: tareas del estudiante")
+        }
+
+        Button(
+            onClick = { onSeleccionar(11) },
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("11 — Recursos Android y configuración visual")
         }
     }
 }

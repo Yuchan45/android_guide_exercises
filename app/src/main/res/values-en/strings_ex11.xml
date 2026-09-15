@@ -1,0 +1,16 @@
+<resources>
+    <!-- Exercise 11 - English translation. No Kotlin code changes needed. -->
+    <string name="ex11_titulo">Study tasks</string>
+    <string name="ex11_label_nombre">Name</string>
+    <string name="ex11_label_descripcion">Description</string>
+    <string name="ex11_agregar">Add</string>
+    <string name="ex11_quitar">Remove</string>
+
+    <string name="ex11_tarea1_nombre">Buy groceries</string>
+    <string name="ex11_tarea1_desc">Go to the supermarket and buy fruit, vegetables and dairy</string>
+    <string name="ex11_tarea2_nombre">Finish the report</string>
+    <string name="ex11_tarea2_desc">Write the final report for the university project</string>
+    <string name="ex11_tarea3_nombre">Call the dentist</string>
+    <!-- El apostrofo va escapado: en strings.xml es un caracter reservado. -->
+    <string name="ex11_tarea3_desc">Confirm next week\'s appointment</string>
+</resources>

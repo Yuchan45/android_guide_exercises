@@ -1,0 +1,16 @@
+<resources>
+    <!-- Ejercicio 11 - Recursos Android y configuracion visual -->
+    <string name="ex11_titulo">Tareas de estudio</string>
+    <string name="ex11_label_nombre">Nombre</string>
+    <string name="ex11_label_descripcion">Descripción</string>
+    <string name="ex11_agregar">Agregar</string>
+    <string name="ex11_quitar">Quitar</string>
+
+    <!-- Datos de ejemplo: tambien van a recursos, asi se traducen solos -->
+    <string name="ex11_tarea1_nombre">Comprar víveres</string>
+    <string name="ex11_tarea1_desc">Ir al supermercado y comprar frutas, verduras y lácteos</string>
+    <string name="ex11_tarea2_nombre">Terminar informe</string>
+    <string name="ex11_tarea2_desc">Redactar el informe final del proyecto de la facultad</string>
+    <string name="ex11_tarea3_nombre">Llamar al dentista</string>
+    <string name="ex11_tarea3_desc">Confirmar el turno de la próxima semana</string>
+</resources>
